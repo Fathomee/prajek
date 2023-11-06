@@ -1,0 +1,417 @@
+:root {
+  --day-background-color: #fbfbfb;
+  --day-text-color: #181818; 
+  --night-background-color: #181818; 
+  --night-text-color: #fbfbfb;
+ }
+body {
+  background-color:var( --night-background-color) !important;
+  margin: 0;
+  padding: 0;
+  color: var(--day-text-color);
+  }
+
+  
+
+   /* background-image: url('../../images/cc.svg'); */
+  
+  @media (max-width: 767px) {
+    /* Add your mobile layout styles here */body{
+      overflow-y: hidden;
+    }
+    .top-view{
+      
+      overflow-x: scroll;
+
+    }
+    .layout-container{
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      height: 440px;
+      width: 1000px;
+      background-position: center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:150px;
+      overflow-x: scroll;
+
+      }
+      .layout{
+        height: 96%;
+        width: 980px;
+        display: flex;
+        flex-direction: column;
+      }
+      .col1{
+        height: 178px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .col2{
+      height: 245px;
+      
+      }
+      .col1{
+        display: flex;
+        flex-direction: row;
+      }
+      .row1{
+      width: 110px;
+      margin-left: 27px;
+      border: 1px solid var(--night-text-color);
+      }
+      .row2{
+      width: 730px;
+      height: 100px;
+      margin-top: 50px;
+      border-top: 1px solid var(--night-text-color);
+      }
+      .row3{
+        width: 110px;
+        border: 1px solid var(--night-text-color);
+      }
+      .col2{
+        display: flex;
+        flex-direction: row;
+        border:none;
+      }
+      .rowb1{
+        width: 137px;
+        display: flex;
+        flex-direction: row;
+      }
+      .side-classrooms{
+        width: 107px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 9px;
+        height: 230px;
+      }
+      .side-alley{
+        width: 25px;
+        border: 1px solid var(--night-text-color);
+        height:236px;
+      }
+      /*this is the classroom layout */
+      .side-classroom{
+        height: 76px;
+        width: 105px;
+        
+      }
+      .stairs-classroom{
+        height: 108px;
+        width: 80px;
+        
+      }
+      .stairs-side{
+        margin-top: 17px;
+        height: 50px;
+        width: 50px;
+        border:1px solid var(--night-text-color);
+        display: flex;
+        flex-direction: row;
+        border:1px  solid var(--night-text-color);
+        margin-bottom: 1px;
+      }
+      .stairs-step1{
+          width: 20px;
+          border-right:1px  solid var(--night-text-color);
+      
+      }
+      .stairs-step2{
+        border-top:2px  solid var(--night-text-color);
+        height: 50%;
+        margin-top: 47%;
+        width: 30px;
+      }
+      .row2{
+        display: flex;
+        flex-direction: column;
+      }
+      .main-col1{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+      }
+      .main-col2{
+        height: 20px;
+        width: 100%;
+        border-bottom: 1px var(--night-text-color) solid;
+      }
+      .main-classrooms1{
+        width: 100%;
+        height: 100%;
+        margin-right: 48px;
+        display: flex;
+      
+      }
+      .main-classrooms2{
+        width: 100%;
+        height: 100%;
+        margin-left: 48px;
+        display: flex;
+      }
+      .main-classroom{
+        width:100%;
+        height:100%;
+       
+      }
+      
+      .stairs-classroom2{
+        height: 108px;
+        width: 80px;
+        margin-left: 30px;
+      }
+      
+      .stairs-side2{
+        margin-top: 17px;
+        height: 50px;
+        width: 50px;
+        border:1px solid var(--night-text-color);
+        display: flex;
+        flex-direction: row;
+        border:1px  solid var(--night-text-color);
+        margin-bottom: 1px;
+        margin-left: 60px;
+      }
+      .stairs-step1a{
+        border-top:2px  solid var(--night-text-color);
+        height: 50%;
+        margin-top: 47%;
+        width: 30px;
+      }
+      .stairs-step2b{
+        width: 20px;
+        border-left:1px  solid var(--night-text-color);
+      }
+      
+      
+ 
+      ::-webkit-scrollbar {
+        width: 0.1em;
+      }
+
+
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: transparent;
+      }
+    
+    
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 768px) {
+    /* Add your desktop layout styles here */
+
+    .top-view{
+
+    }
+     /* background-image: url('../../images/cc.svg'); */
+    .layout-container{
+
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    }
+    .layout{
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .col1{
+      height: 45%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .col2{
+    height: 60%;
+    
+    }
+    .col1{
+      display: flex;
+      flex-direction: row;
+    }
+    .row1{
+    width: 12%;
+    margin-left: 3.5%;
+    border: 1px solid var(--night-text-color);
+    }
+    .row2{
+    width: 85%;
+    height: 55%;
+    margin-top: 5%;
+    border-top: 1px solid var(--night-text-color);
+    }
+    .row3{
+      width: 12%;
+      border: 1px solid var(--night-text-color);
+    }
+    .col2{
+      display: flex;
+      flex-direction: row;
+      border:none;
+    }
+    .rowb1{
+      width: 14.2%;
+      display: flex;
+      flex-direction: row;
+    }
+    .side-classrooms{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top:5%;
+      height: 98%;
+    }
+    .side-alley{
+      width: 20%;
+      border: 1px solid var(--night-text-color);
+      height:100%;
+    }
+    /*this is the classroom layout */
+    .side-classroom{
+      height: 100%;
+      width: 95%;
+      border:1px solid var(--night-text-color);
+      margin-left: 5%;
+    }
+    .stairs-classroom{
+      height: 61%;
+      width: 72.5%;
+      border:1px solid var(--night-text-color);
+  
+    }
+    .stairs-side{
+      margin-top: 15%;
+      height: 45%;
+      width: 45%;
+      border:1px solid var(--night-text-color);
+      display: flex;
+      flex-direction: row;
+      border:1px  solid var(--night-text-color);
+      margin-bottom: 1px;
+    }
+    .stairs-step1{
+        width: 30%;
+        border-right:1px  solid var(--night-text-color);
+    
+    }
+    .stairs-step2{
+      border-top:5px  solid var(--night-text-color);
+      height: 50%;
+      margin-top: 47%;
+      width: 70%;
+    }
+    .row2{
+      display: flex;
+      flex-direction: column;
+    }
+    .main-col1{
+      width: 100%;
+      height: 75%;
+      display: flex;
+      flex-direction: row;
+    }
+    .main-col2{
+      height: 25%;
+      width: 100%;
+      border-bottom: 1px var(--night-text-color) solid;
+    }
+    .main-classrooms1{
+      width: 100%;
+      border: 1px var(--night-text-color)solid;
+      height: 100%;
+      margin-right:7%;
+      display: flex;
+    
+    }
+    .main-classrooms2{
+      width: 100%;
+      border: 1px var(--night-text-color) solid;
+      height: 100%;
+      margin-left:7%;
+      display: flex;
+      
+    }
+    .main-classroom{
+      width:100%;
+      height:100%;
+     
+      border:1px solid var(--night-text-color);
+    }
+    
+    .stairs-classroom2{
+      height: 61%;
+      width: 72.5%;
+      border:1px solid var(--night-text-color);
+      margin-left: 27.5%;
+    }
+    
+    .stairs-side2{
+      margin-top: 15%;
+      height: 45%;
+      width: 45%;
+      border:1px solid var(--night-text-color);
+      display: flex;
+      flex-direction: row;
+      border:1px  solid var(--night-text-color);
+      margin-bottom: 1px;
+      margin-left: 55%;
+    }
+    .stairs-step1a{
+      border-top:5px  solid var(--night-text-color);
+      height: 50%;
+      margin-top: 47%;
+      width: 65%;
+    }
+    .stairs-step2b{
+      width: 35%;
+      border-left:1px  solid var(--night-text-color);
+    }
+    
+    
+    ::-webkit-scrollbar {
+      width: 0.1em;
+    }
+
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+  
+
+}
+
+.green{
+  width:100%;
+  height:100%;
+  background-color: #30c04f;
+}
+
+.red{
+  width:100%;
+  height:100%;
+  background-color: #dc2626;
+}
+.gray{
+  width:100%;
+  height:100%;
+  background-color:gray;
+}
+button{
+  color: var(--night-text-color);
+}

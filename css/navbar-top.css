@@ -1,0 +1,146 @@
+:root {
+  --day-background-color: #fbfbfb;
+  --day-text-color: #181818; 
+  --night-background-color: #181818; 
+  --night-text-color: #fbfbfb;
+ }
+ 
+body{
+ margin: 0;
+ font-family:Arial, Helvetica, sans-serif;
+ height: 2000px;
+ background-color: var(--day-background-color);
+}
+
+.navbar {
+ overflow: hidden;
+ transition: top 0.3s;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+ justify-content: flex-start;
+ background-color:var(--day-background-color);
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ z-index: 300;
+
+}
+
+.navbar a {
+ float: right;
+ display: block;
+ color: var(--night-text-color);
+ text-align: center;
+ padding: 8px 4px;
+ text-decoration: none;
+ box-sizing: border-box;
+ overflow: hidden;
+}
+
+.content {
+ padding: 15px;
+ margin-top: 60px;
+
+}
+#profileBtn{
+ border:none;
+ background-color: transparent;
+ cursor: pointer;
+}
+
+.account-list{
+ margin: auto;
+  color: var(--night-text-color);
+ display: flex;
+ justify-content: flex-end;
+ flex-direction: column;
+ 
+}
+
+#theDialog{
+  background-color: var(--day-background-color);
+ z-index: 100;
+ max-width: 80%;
+ margin-left: auto;
+ margin-right: 0;
+ margin-bottom: 0;
+ margin-top: 40px;
+ border:none;
+ color: var(--day-text-color);
+ border-radius: 10px;
+}
+
+.account-list button{
+  background-color: var(--day-background-color);
+ color: var( --day-text-color);
+ border-radius: 5px;
+ border:none;
+ font-family: 'Roboto', sans-serif;;
+ padding: 6px 10px;
+ margin-top: 5px;
+ text-align: center;
+ cursor: pointer;
+}
+.acc1,.acc2,.acc3{
+  text-align: center;
+}
+.account-list button:hover{
+ background-color: var(--night-background-color);
+ transition: ease .3s;
+color: var(--night-text-color);
+}
+.account-list button:active{
+  background-color: var(--night-background-color);
+ transition: ease .3s;
+color: var(--day-text-color);
+}
+#acc1{
+ padding-right:25px ;
+ 
+}
+#acc3{
+ padding-right:18px ;
+}
+.submits{
+ border: none;
+ background-color: transparent;
+ cursor: pointer;
+ margin-left: -51px;
+ position: absolute;
+ border-left: 1px solid var( --day-text-color);
+ height: 32px;
+}
+#search{
+ padding: 8px 31px;
+ border-radius: 10px;
+ border: 1px solid var( --day-text-color);
+ margin: none;
+ background-color: transparent;
+}
+
+.label-checkbox{
+  margin-right: 10px;
+}
+
+.light-icon{
+ margin-left: -25px;
+ display: none;
+}
+
+.dark-icon{
+  z-index: 999;
+}
+
+
+label[for="checkbox"] {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
